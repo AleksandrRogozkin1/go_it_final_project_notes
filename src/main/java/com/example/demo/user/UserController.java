@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping("/user")
 @RequiredArgsConstructor
+@RequestMapping("/user")
 public class UserController {
     private final UserValidator userValidator;
     private final UserService userService;
@@ -33,5 +33,5 @@ public class UserController {
         }
 
         return modelAndView;
-    } // need to secure
+    }
 }
